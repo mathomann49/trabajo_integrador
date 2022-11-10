@@ -1,0 +1,62 @@
+
+
+.navbar li a:hover {
+    color: white;
+}
+
+.fa-cart-shopping:hover {
+    color: rgb(6, 6, 54); 
+    filter: drop-shadow(1px 1px 3px blue);
+}
+
+.link-nosotros:hover {
+    background: white;
+    color: black;
+    font-weight: 600;
+    border: 1px black solid;
+}
+
+.slider ul {
+    animation: cambio 20s infinite alternate;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+
+.precio a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: blue;
+  } 
+
+/* .accesories {
+    background: rgba(255, 255, 255, 0.3);
+    color: blue;
+}    */
+.btn-add:hover {
+    color: blue;
+    background: beige;
+    filter: drop-shadow(1px 1px 3px blue);
+}
+ .itemp {
+    transition: all 300ms;
+}
+.itemp:hover {
+    transform: scale(1.1);
+} 
+.item-localizacion i:hover {
+    filter: drop-shadow(1px 1px 3px blue);
+    color: aliceblue;
+  }

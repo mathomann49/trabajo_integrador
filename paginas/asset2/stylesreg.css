@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=Montserrat&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monserrat, sans-serif;
+}
+
+body {
+   /*background-image: url(./S_5.png);
+   background-size: cover;
+   background-position: fixed;*/
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 100px 25px 25px 25px;
+    max-width: 100%;
+    /*background: #2193b0;*/
+    background-image: url(./S_5.png);
+    background-size: cover;
+    
+}
+.form img {
+   max-width: 100%;
+}
+
+.form-container input[type="radio"] {
+    display: none;
+}
+
+.form-container label {
+    font-size: 30px;
+    /*color: #2193b0;*/
+    background: linear-gradient(to top, #2193b0, #6dd5ed);
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+ }
+
+ .form-container .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    /*background: #2193b0;*/
+    background: linear-gradient(to top, #2193b0, #6dd5ed);
+    order: 1;
+    display: none;
+    gap: 20px;
+    border-radius: 0 15px 15px 15px;
+ }
+ .form-container input[type="radio"]:checked + label + .item {
+    display: flex;
+ }
+
+ .form-container input[type="radio"]:checked + label {
+    /*background: #2193b0;*/
+    /*background: linear-gradient(to top, #2193b0, #6dd5ed);*/
+    background: #6dd5ed;
+    color: black;
+ }
+ form {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 30px;
+    border-radius: 7px;
+    box-shadow: 7px 13px 37px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px 30px; 
+    max-width: 100%;
+ }
+
+ .campo label {
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+    background: transparent;
+    display: block;
+    max-width: 100%;
+ }
+
+ .campo input {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 100%;
+    border: none;
+    border-radius: 32px;
+    height: 64px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0 30px;
+ }
+
+ .item a {
+   font-size: 20px;
+ }
+ .terminos  {
+    background: transparent;
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+ }
+
+ /*.btn,*/ 
+ .registro-btn,
+ .iniciar-secion {
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 32px;
+    height: 64px;
+    font-weight: 600;
+    background: blue;
+    padding: 8px 20px 8px 20px;
+    
+ }
+  
+ 
+ .iniciar-secion:hover {
+   background: rgba(255, 255, 255, 0.3);
+ }
+ .registro-btn:hover {
+   background: rgba(255, 255, 255, 0.3);
+ }
+ /*.btn {
+   background: rgba(255, 255, 255, 0.3);
+ }*/
+.btnvolver {
+   color: black;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    width: 120px;
+    margin: 4px 2px;
+    align-items: center;
+    padding: 8px 20px 8px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 25px;
+    border: 2px black solid;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    text-decoration-line: none;
+}
+.btnvolver:hover {
+   background: rgba(255, 255, 255, 0.3);
+   border: 2px white solid;
+   font-weight: 600;
+}
+
+@media(max-width:452px) {
+   .form-container label,
+   .form {
+      font-size: 20px;
+   }
+
+   .campo label,
+   .campo input {
+      font-size: 17px;
+   }
+
+   .item a,
+   .terminos {
+      font-size: 15px;
+   }
+   .campo input {
+      height: 40px;
+   }
+
+   .registro-btn,
+ .iniciar-secion {
+   height: 40px;
+   font-size: 16px;
+   padding: 8px 40px 8px 40px;
+ }
+}
+
+@media(max-width:404px) {
+   .campo label,
+   .campo input {
+      font-size: 11px;
+   }
+
+   .campo input {
+      height: 30px;
+   }
+
+   .terminos,
+   .terminos a {
+      font-size: 10px;
+   }
+}
+
+@media(max-width:342px) {
+   .campo label,
+   .campo input {
+      font-size: 9px;
+   }
+   }
