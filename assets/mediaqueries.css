@@ -15,7 +15,9 @@
     padding: 30px;
     gap: 20px;
     z-index: 2;
-    display: none;
+    /*display: none;*/
+    transition: all 0.3s ease-out;
+    transform: translateX(-150%);
 }
 .navbar-list a {
     font-size: 20px;
@@ -26,7 +28,8 @@
     order: 2;
  }
 #menu-toggle:checked + .navbar-list {
-    display: flex;
+    /*display: flex;*/
+    transform: translateX(0);
 }
 .texto-foto {
     font-size: 32px;
